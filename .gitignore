@@ -3,6 +3,9 @@ data/processed/
 models/
 mlruns/
 
+# MLflow tracking database
+mlflow.db
+
 # DVC cache
 .dvc/cache/
 
