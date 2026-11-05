@@ -14,6 +14,11 @@ class PropertyData(BaseModel):
     square_feet: int
     year_built: int
 
+@app.get("/health")
+def health():
+    # Simple liveness probe so monitoring tools don't hit 404s
+    return {"status": "ok"}
+
 @app.post("/predict")
 def predict_price(prop: PropertyData):
     # Convert incoming data to a dataframe row
