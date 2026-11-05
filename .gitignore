@@ -1,0 +1,22 @@
+# Data and model artifacts (processed outputs & trained models are rebuilt via dvc repro)
+data/processed/
+models/
+mlruns/
+
+# DVC cache
+.dvc/cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment / secrets
+.env
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
